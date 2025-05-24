@@ -25,12 +25,6 @@ font-family: "Poppins";
     padding-right: 10px;
     /* outline: 1px solid red; */
 }
-/* .box{
-    background-image: url(../img/bg-hero.webp);
-    background-repeat: no-repeat;
-    background-position:right;
-    background-size: 589px;
-} */
 .header{
     padding: 26px 0 58px 0;
 }
@@ -80,14 +74,11 @@ line-height: 1.5;
 padding: 12px 28px;
 }
 .hero{
-    padding: 0 0 200px 0;
+    padding: 111px 0 200px 0;
     background-image: url(../img/bg-hero.webp);
     background-repeat: no-repeat;
-    background-position:right;
+    background-position: right top 50px;
     background-size: 589px;
-}
-.hero-box{
-    padding: 111px 0 0 0;
 }
 .hero-title{
 width: 600px;
@@ -152,6 +143,10 @@ line-height: 1.5;
 .popular{
     padding: 0 0 200px;
 }
+.popular-img{
+    width: 64px;
+height: 56.95px;
+}
 .popular-title{
 color:var(--main2-color);
 text-align: center;
@@ -176,12 +171,26 @@ color: var(--accent-color);
 font-size: 20px;
 font-weight: 500;
 line-height: 1.5;
+margin-top: 100px;
+margin-bottom: 200px;
+}
+.popular-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .popular-title3{
 color:var(--text2-color);
 font-size: 24px;
 font-weight: 500;
 line-height: 1.5;
+}
+.popular-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 100px;
+    margin-top: 90px;
 }
 .popular-box{
     width: 1224px;
@@ -190,6 +199,25 @@ border-radius: 25px;
 border: 2px solid rgba(255, 255, 255, 0.05);
 background: rgba(44, 53, 61, 0.20);
 backdrop-filter: blur(25px);
+display: flex;
+flex-direction: column;
+padding: 55px 0 57px 0;
+justify-content: center;
+align-items: center;
+}
+.popular-box3{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-content: end;
+    align-items: first baseline;
+}
+.popular-list2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 107px;
+    padding: 55px 0 0 0;
 }
 .popular-title2{
 color:var(--main-color3);
@@ -209,8 +237,16 @@ line-height: 1.5;
 font-size: 16px;
 font-weight: 400;
 line-height: 1.875; /* 187.5% */
+margin-bottom: 30px;
+}
+.popular-box6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
 }
 .popular-button{
+width: 106px;
     padding: 9px 35px;
     border-radius: 8px;
 background:var(--background-color);
@@ -219,9 +255,27 @@ font-size: 16px;
 font-weight: 600;
 line-height: 1.5;
 }
+.popular-box4{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.popular-img2{
+width: 28px;
+height: 28px;
+}
 .popular-item{
     width: 392px;
 height: 294px;
+display: flex;
+flex-direction: column;
+padding: 33px;
+}
+.popular-button2{
+    width: 42px;
+    border-radius: 8px;
+background: var(--background-color);
+padding: 7px;
 }
 .popular-item:hover,
 .popular-item:focus{
@@ -229,16 +283,47 @@ border-radius: 15px;
 border: 2px solid rgba(255, 255, 255, 0.80);
 background: rgba(40, 48, 54, 0.60);
 backdrop-filter: blur(25px);
+/* margin-bottom: 20px; */
 .popular-button{
-    background-color: var(--subtitle-color);
+    background-color: var(--accent-color);
     color:var(--main2-color);
 }
 .popular-subtitle2{
 color: var(--subtitle-color);
 }
 }
+.popular-box5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popular-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
 .newcomer{
     padding: 0 0 218px 0;
+}
+.newcomer-box6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.newcomer-box5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.newcomer-button2{
+     width: 42px;
+    border-radius: 8px;
+background: var(--background-color);
+padding: 7px;   
 }
 .newcomer-subtitle2{
 color:var(--accent-color2);
@@ -252,6 +337,10 @@ line-height: 1.5;
 font-size: 16px;
 font-weight: 400;
 line-height: 1.875; /* 187.5% */
+}
+.newcomer-img2{
+    width: 28px;
+height: 28px;
 }
 .newcomer-button{
 padding: 9px 35px;
@@ -275,7 +364,7 @@ border: 2px solid rgba(255, 255, 255, 0.80);
 background: rgba(40, 48, 54, 0.60);
 backdrop-filter: blur(25px);
 .newcomer-button{
-    background-color: var(--subtitle-color);
+    background-color: var(--accent-color);
     color:var(--main2-color);
 }
 .newcomer-subtitle2{
