@@ -25,6 +25,9 @@ font-family: "Poppins";
     padding-right: 10px;
     outline: 1px solid red;
 }
+.header{
+    padding: 26px 0 58px 0;
+}
 .header-logo{
 color: var(--main-color2);
 font-size: 22px;
@@ -53,6 +56,7 @@ line-height: 1.5;
 padding: 12px 28px;
 }
 .hero{
+    padding: 0 0 200px 0;
     background-image: url(../img/bg-hero.webp);
     background-repeat: no-repeat;
     background-position:right;
@@ -98,6 +102,9 @@ color: var(--main2-color);
 font-size: 16px;
 font-weight: 600;
 line-height: 1.5;
+}
+.popular{
+    padding: 0 0 200px;
 }
 .popular-title{
 color:var(--main2-color);
@@ -145,7 +152,7 @@ font-weight: 500;
 line-height: 1.5;
 }
 .popular-subtitle2{
-color:var(--subtitle-color);
+color:var(--accent-color2);
 font-size: 18px;
 font-weight: 400;
 line-height: 1.5;
@@ -170,7 +177,8 @@ line-height: 1.5;
     width: 392px;
 height: 294px;
 }
-.popular-item:hover{
+.popular-item:hover,
+.popular-item:focus{
 border-radius: 15px;
 border: 2px solid rgba(255, 255, 255, 0.80);
 background: rgba(40, 48, 54, 0.60);
@@ -179,6 +187,12 @@ backdrop-filter: blur(25px);
     background-color: var(--subtitle-color);
     color:var(--main2-color);
 }
+.popular-subtitle2{
+color: var(--subtitle-color);
+}
+}
+.newcomer{
+    padding: 0 0 218px 0;
 }
 .newcomer-subtitle2{
 color:var(--subtitle-color);
@@ -244,6 +258,9 @@ font-size: 18px;
 font-weight: 500;
 line-height: 1.5;
 }
+.about{
+padding: 0 0 250px 0;
+}
 .about-subtitle{
     width: 393px;
     color:var(--main-color3);
@@ -273,6 +290,9 @@ border-radius: 8px;
 border: 1px solid rgba(255, 255, 255, 0.10);
 background: rgba(40, 48, 54, 0.20);
 backdrop-filter: blur(25px);
+}
+.become{
+    padding: 0 0 240px 0;
 }
 .become-title{
 color:var(--main-color2);
@@ -313,6 +333,7 @@ font-weight: 600;
 line-height: 1.5;
 }
 .footer{
+    padding: 0 0 98px;
    border-top: 0.5px solid var(--line-color);
 }
 .footer-logo{
