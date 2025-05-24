@@ -14,11 +14,11 @@
 <body>
     <header class="header">
         <div class="container">
+            <nav class="header-nav">
             <a class="header-logo" href="./index.html">
                 <img src="./img/logo.webp" alt="logo">
                 antools.
             </a>
-            <nav class="header-nav">
                 <ul class="header-list">
                     <li class="header-item"><a class="header-link" href="./index.html">Home</a></li>
                     <li class="header-item"><a class="header-link" href="#">Categories</a></li>
@@ -34,7 +34,7 @@
     </header>
     <main class="main">
 <section class="hero">
-    <div class="container">
+    <div class="container hero-box">
     <h1 class="hero-title">Awesome tools for Designer & Developer<span class="hero-span">.</span></h1>
     <p class="hero-paragraf">Antool is a web collection of information on paid or free Design and Development tools</p>
     <form class="hero-form">
@@ -43,9 +43,9 @@
         <button class="hero-btn" type="button">Search</button>
     </form>
     <ul class="hero-list">
-        <li class="hero-item"><img class="hero-img" src="./img/facebook.webp" alt="Facebook"></li>
-        <li class="hero-item"><img class="hero-img" src="./img/instagram.webp" alt="instagram"></li>
-        <li class="hero-item"><img class="hero-img" src="./img/twitter.webp" alt="twitter"></li>
+        <li class="hero-item"><a href="#"><img class="hero-img" src="./img/facebook.webp" alt="Facebook"></a></li>
+        <li class="hero-item"><a href="#"><img class="hero-img" src="./img/instagram.webp" alt="instagram"></a></li>
+        <li class="hero-item"><a href="#"><img class="hero-img" src="./img/twitter.webp" alt="twitter"></a></li>
     </ul>
 </div>
 </section>
@@ -159,39 +159,51 @@
 <section class="become">
     <div class="container">
     <h2 class="become-title">Become a contributor?</h2>
+    <div class="become-box">
     <p class="become-paragraf">Join us and get tips & tricks to become a great Designer and Developer</p>
     <form class="become-form">
-    <input placeholder="Enter your email..."  class="become-text" type="text">
+    <input placeholder="Enter your email..."  class="become-text" type="email">
     <button class="become-btn" type="button">Join Us</button>
     </form>
+    </div>
     </div>
 </section>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-box">
+            <div>
         <a class="footer-logo" href="./index.html">
             <img src="./img/logo.webp" alt="logo">
             antools.
         </a>
         <p class="footer-paragraf">Copyright 2021. Antools</p>
         <p class="footer-subtitle">Antool is a web collection of information on paid or free Design and Development tools</p>
+        </div>
         <ul class="footer-list">
             <li class="footer-item">
                 <h3 class="footer-title">Contact Us</h3>
+                <div class="footer-text">
                 <a href="tel:+621987463" class="footer-inform">+621987463</a>
-                <a href="https://www.google.com/maps/place/Tower+A+Building+10/@28.4941242,77.0850432,17z/data=!4m10!1m2!2m1!1sM+Building,+No.10+A!3m6!1s0x390d195cdc970ce7:0xf32ea5c44995c233!8m2!3d28.4949865!4d77.0871385!15sChNNIEJ1aWxkaW5nLCBOby4xMCBBkgESYXBhcnRtZW50X2J1aWxkaW5nqgFSEAEqFiISbSBidWlsZGluZyBubyAxMCBhKAAyHhABIhrgrJdu4DNVzbqnAongSxm_ST2TsYQAk3Q3oTIWEAIiEm0gYnVpbGRpbmcgbm8gMTAgYeABAA!16s%2Fg%2F11sv_5gvyb?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D" class="footer-inform">M Building, No.10 A</a>
+                <address class="footer-adress">
+                <a target="_blank" href="https://www.google.com/maps/place/Tower+A+Building+10/@28.4941242,77.0850432,17z/data=!4m10!1m2!2m1!1sM+Building,+No.10+A!3m6!1s0x390d195cdc970ce7:0xf32ea5c44995c233!8m2!3d28.4949865!4d77.0871385!15sChNNIEJ1aWxkaW5nLCBOby4xMCBBkgESYXBhcnRtZW50X2J1aWxkaW5nqgFSEAEqFiISbSBidWlsZGluZyBubyAxMCBhKAAyHhABIhrgrJdu4DNVzbqnAongSxm_ST2TsYQAk3Q3oTIWEAIiEm0gYnVpbGRpbmcgbm8gMTAgYeABAA!16s%2Fg%2F11sv_5gvyb?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D" class="footer-inform">M Building, No.10 A</a>
+                </address>
                 <a href="mailto:antools@awesome.com" class="footer-inform">antools@awesome.com</a>
+                </div>
             </li>
             <li class="footer-item">
                 <h3 class="footer-title">Categories</h3>
+                <div class="footer-text">
                 <a href="#" class="footer-inform">Design</a>
                 <a href="#" class="footer-inform">Development</a>
+                </div>
             </li>
             <li class="footer-item">
                 <h3 class="footer-title">Company Info</h3>
+                    <div class="footer-text">
                     <a href="#" class="footer-inform">About Us</a>
                     <a href="#" class="footer-inform">Our Partners</a>
                     <a href="#" class="footer-inform">Blog</a>
+                    </div>
             </li>
         </ul>
         </div>
