@@ -283,6 +283,9 @@ border-radius: 15px;
 border: 2px solid rgba(255, 255, 255, 0.80);
 background: rgba(40, 48, 54, 0.60);
 backdrop-filter: blur(25px);
+background-image: url(../img/ellipse.webp);
+background-repeat: no-repeat;
+background-position: right top;
 /* margin-bottom: 20px; */
 .popular-button{
     background-color: var(--accent-color);
@@ -308,6 +311,12 @@ color: var(--subtitle-color);
 .newcomer{
     padding: 0 0 218px 0;
 }
+.newcomer-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 50px;
+}
 .newcomer-box6{
     display: flex;
     justify-content: center;
@@ -318,6 +327,15 @@ color: var(--subtitle-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.newcomer-box2{
+    display: flex;
+    gap: 30px;
+}
+.newcomer-box3{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
 }
 .newcomer-button2{
      width: 42px;
@@ -332,11 +350,13 @@ font-weight: 400;
 line-height: 1.5;
 }
 .newcomer-subtitle{
-    width: 326px;
+width: 245px;
     color:var(--text-color);
 font-size: 16px;
 font-weight: 400;
 line-height: 1.875; /* 187.5% */
+margin-top: 30px;
+margin-bottom: 30px;
 }
 .newcomer-img2{
     width: 28px;
@@ -363,6 +383,9 @@ border-radius: 15px;
 border: 2px solid rgba(255, 255, 255, 0.80);
 background: rgba(40, 48, 54, 0.60);
 backdrop-filter: blur(25px);
+background-image: url(../img/ellipse.webp);
+background-repeat: no-repeat;
+background-position: right top;
 .newcomer-button{
     background-color: var(--accent-color);
     color:var(--main2-color);
@@ -372,8 +395,19 @@ backdrop-filter: blur(25px);
 }
 }
 .newcomer-item{
-    width: 392px;
-height: 294px;
+width: 288px;
+height: 284px;
+padding: 28px 21px 28px 22px;
+}
+.newcomer-box{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+.newcomer-container{
+    display: flex;
+gap: 197px;
 }
 .newcomer-title{
 color: var(--main-color2);
@@ -400,6 +434,15 @@ line-height: 1.5;
 .about{
 padding: 0 0 250px 0;
 }
+.about-box{
+    background-image: url(../img/circle.webp);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 380px;
+width: 392px;
+height: 492px;
+    position: relative;
+}
 .about-subtitle{
     width: 393px;
     color:var(--main-color3);
@@ -409,7 +452,15 @@ font-weight: 400;
 line-height: 2.14286; /* 214.286% */
 letter-spacing: 0.21px;
 }
+.about-container{
+    display: flex;
+    gap: 57px;
+    justify-content: center;
+    align-items: center;
+}
 .about-name{
+    width: 220px;
+    height: 39px;
 color: var(--main-color3);
 font-size: 26px;
 font-weight: 500;
@@ -429,6 +480,13 @@ border-radius: 8px;
 border: 1px solid rgba(255, 255, 255, 0.10);
 background: rgba(40, 48, 54, 0.20);
 backdrop-filter: blur(25px);
+padding: 10px 22px 16px 23px;
+display: flex;
+flex-direction: column;
+gap: 2px;
+position: absolute;
+left: 123px;
+top: 372px;
 }
 .become{
     padding: 0 0 240px 0;
