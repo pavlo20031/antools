@@ -13,9 +13,15 @@
     --bgform-color:#283036;
     --line-color:rgba(255, 255, 255, 0.15);
     --subtitle-color:#FFA537;
+    --blur-color: rgba(40, 48, 54, 0.20);
+    --border-color:rgba(255, 255, 255, 0.10);
+    --hover-bg:rgba(40, 48, 54, 0.60);
+    --hover-border:rgba(255, 255, 255, 0.80);
+    --trusted-bg:rgba(44, 53, 61, 0.20);
+    --trusted-border:rgba(255, 255, 255, 0.05);
 }
 body{
-background-color:var(--background-color) ;
+background-color: var(--background-color) ;
 font-family: "Poppins";
 }
 .container{
@@ -31,9 +37,11 @@ font-family: "Poppins";
 .header-nav{
 display: flex;
 }
+.header-box{
+    display: flex;
+}
 .header-list{
     display: flex;
-    margin-left: 257px;
     margin-right: 193px;
     align-items: center;
     gap: 43px;
@@ -51,6 +59,7 @@ color: var(--main-color2);
 font-size: 22px;
 font-weight: 600;
 line-height: 1.5;
+margin-right: 257px;
 }
 .header-link{
 color: var(--text-color);
@@ -141,7 +150,7 @@ font-weight: 600;
 line-height: 1.5;
 }
 .popular{
-    padding: 0 0 200px;
+    padding: 0 0 200px 0;
 }
 .popular-img{
     width: 64px;
@@ -172,18 +181,11 @@ font-size: 20px;
 font-weight: 500;
 line-height: 1.5;
 margin-top: 100px;
-margin-bottom: 200px;
 }
 .popular-btns{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.popular-title3{
-color:var(--text2-color);
-font-size: 24px;
-font-weight: 500;
-line-height: 1.5;
 }
 .popular-list{
     display: flex;
@@ -192,32 +194,12 @@ line-height: 1.5;
     row-gap: 100px;
     margin-top: 90px;
 }
-.popular-box{
-    width: 1224px;
-height: 253px;
-border-radius: 25px;
-border: 2px solid rgba(255, 255, 255, 0.05);
-background: rgba(44, 53, 61, 0.20);
-backdrop-filter: blur(25px);
-display: flex;
-flex-direction: column;
-padding: 55px 0 57px 0;
-justify-content: center;
-align-items: center;
-}
 .popular-box3{
     display: flex;
     flex-direction: column;
     gap: 3px;
     justify-content: end;
     align-items: first baseline;
-}
-.popular-list2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 107px;
-    padding: 55px 0 0 0;
 }
 .popular-title2{
 color:var(--main-color3);
@@ -280,8 +262,8 @@ padding: 7px;
 .popular-item:hover,
 .popular-item:focus{
 border-radius: 15px;
-border: 2px solid rgba(255, 255, 255, 0.80);
-background: rgba(40, 48, 54, 0.60);
+outline: 2px solid var(--hover-border);
+background: var(--hover-bg);
 backdrop-filter: blur(25px);
 background-image: url(../img/ellipse.webp);
 background-repeat: no-repeat;
@@ -307,7 +289,36 @@ color: var(--subtitle-color);
     align-items: center;
     gap: 25px;
 }
-
+.trusted{
+    padding: 0 0 200px 0;
+}
+.trusted-box{
+    width: 1224px;
+height: 253px;
+border-radius: 25px;
+border: 2px solid var(--trusted-border);
+background: var(--trusted-bg);
+backdrop-filter: blur(25px);
+display: flex;
+flex-direction: column;
+padding: 55px 0 57px 0;
+justify-content: center;
+align-items: center;
+background-image: url(../img/bg-trusted.webp);
+}
+.trusted-title{
+color:var(--text2-color);
+font-size: 24px;
+font-weight: 500;
+line-height: 1.5;
+}
+.trusted-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 107px;
+    margin: 55px 0 0 0;
+}
 .newcomer{
     padding: 0 0 218px 0;
 }
@@ -380,8 +391,8 @@ line-height: 1.5;
 .newcomer-item:hover,
 .newcomer-item:focus{
 border-radius: 15px;
-border: 2px solid rgba(255, 255, 255, 0.80);
-background: rgba(40, 48, 54, 0.60);
+outline: 2px solid var(--hover-border);
+background: var(--hover-bg);
 backdrop-filter: blur(25px);
 background-image: url(../img/ellipse.webp);
 background-repeat: no-repeat;
@@ -458,6 +469,14 @@ letter-spacing: 0.21px;
     justify-content: center;
     align-items: center;
 }
+.about-text{
+    position: relative;
+}
+.about-lapki{
+    position: absolute;
+    top: -59.34px;
+    left: -59px;
+}
 .about-name{
     width: 220px;
     height: 39px;
@@ -477,8 +496,8 @@ line-height: 1.5;
     width: 265px;
 height: 91px;
 border-radius: 8px;
-border: 1px solid rgba(255, 255, 255, 0.10);
-background: rgba(40, 48, 54, 0.20);
+border: 1px solid var(--border-color);
+background:var(--blur-color);
 backdrop-filter: blur(25px);
 padding: 10px 22px 16px 23px;
 display: flex;
@@ -579,7 +598,7 @@ font-weight: 500;
 line-height: 1.5;
 margin-bottom: 20px;
 }
-.footer-inform{
+.footer-link{
 color: var(--text-color);
 font-size: 16px;
 font-weight: 500;
