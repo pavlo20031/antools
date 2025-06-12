@@ -267,6 +267,8 @@ backdrop-filter: blur(25px);
 background-image: url(../img/ellipse.webp);
 background-repeat: no-repeat;
 background-position: right top;
+transition: 0.4s;
+transform: translateY(-20px);
 .popular-button{
     background-color: var(--accent-color);
     color:var(--main2-color);
@@ -395,6 +397,8 @@ backdrop-filter: blur(25px);
 background-image: url(../img/ellipse.webp);
 background-repeat: no-repeat;
 background-position: right top;
+transition: 0.4s;
+transform: translateY(-20px);
 .newcomer-button{
     background-color: var(--accent-color);
     color:var(--main2-color);
