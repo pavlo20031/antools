@@ -19,6 +19,8 @@
     --hover-border:rgba(255, 255, 255, 0.80);
     --trusted-bg:rgba(44, 53, 61, 0.20);
     --trusted-border:rgba(255, 255, 255, 0.05);
+    --active-color: #ff6e3070;
+    --shadow-color:rgba(255,  255,  255, 0.18);
 }
 body{
 background-color: var(--background-color) ;
@@ -80,6 +82,11 @@ font-size: 16px;
 font-weight: 600;
 line-height: 1.5;
 padding: 12px 28px;
+}
+.header-btn:active{
+    background-color:var(--active-color) ;
+    transition: 0.14s;
+    transform: scale(0.87);
 }
 .hero{
     padding: 111px 0 200px 0;
@@ -148,6 +155,11 @@ font-size: 16px;
 font-weight: 600;
 line-height: 1.5;
 }
+.hero-btn:active{
+    transition: 0.4s;
+box-shadow: 0px -1px 3px 3px var(--shadow-color);
+    transform: scale(0.94)
+}
 .popular{
     padding: 0 0 200px 0;
 }
@@ -180,6 +192,10 @@ font-size: 20px;
 font-weight: 500;
 line-height: 1.5;
 margin-top: 100px;
+}
+.popular-btn:active{
+    border: 1px solid var(--main2-color);
+    transition: 0.7s;
 }
 .popular-btns{
     display: flex;
@@ -444,6 +460,11 @@ font-size: 18px;
 font-weight: 500;
 line-height: 1.5;
 }
+.newcomer-btn:active{
+    background-color:var(--active-color) ;
+    transition: 0.14s;
+    transform: scale(0.87);
+}
 .about{
 padding: 0 0 250px 0;
 }
@@ -561,6 +582,11 @@ background: var(--accent-color);
 font-size: 16px;
 font-weight: 600;
 line-height: 1.5;
+}
+.become-btn:active{
+    transition: 0.4s;
+box-shadow: 0px -1px 3px 3px var(--shadow-color);
+    transform: scale(0.94)
 }
 .footer{
     padding: 70px 0 98px 0;
