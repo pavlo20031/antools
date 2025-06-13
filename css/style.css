@@ -82,6 +82,7 @@ font-size: 16px;
 font-weight: 600;
 line-height: 1.5;
 padding: 12px 28px;
+transition: 0.14s;
 }
 .header-btn:active{
     background-color:var(--active-color) ;
@@ -154,6 +155,7 @@ color: var(--main2-color);
 font-size: 16px;
 font-weight: 600;
 line-height: 1.5;
+    transition: 0.2s;
 }
 .hero-btn:active{
     transition: 0.4s;
@@ -192,6 +194,7 @@ font-size: 20px;
 font-weight: 500;
 line-height: 1.5;
 margin-top: 100px;
+    transition: 0.7s;
 }
 .popular-btn:active{
     border: 1px solid var(--main2-color);
@@ -267,6 +270,7 @@ height: 294px;
 display: flex;
 flex-direction: column;
 padding: 33px;
+transition: 0.4s;
 }
 .popular-button2{
     width: 42px;
@@ -427,6 +431,7 @@ transform: translateY(-20px);
 width: 288px;
 height: 284px;
 padding: 28px 21px 28px 22px;
+transition: 0.4s;
 }
 .newcomer-box{
     display: flex;
@@ -459,6 +464,7 @@ color: var(--main2-color);
 font-size: 18px;
 font-weight: 500;
 line-height: 1.5;
+transition: 0.14s;
 }
 .newcomer-btn:active{
     background-color:var(--active-color) ;
@@ -582,6 +588,7 @@ background: var(--accent-color);
 font-size: 16px;
 font-weight: 600;
 line-height: 1.5;
+transition: 0.2s;
 }
 .become-btn:active{
     transition: 0.4s;
